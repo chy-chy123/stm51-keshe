@@ -1,0 +1,63 @@
+# =========================================================
+# 单片机课设仓库忽略规则 (.gitignore)
+# 策略：保留两张实物图、原理图 PDF、司令部文档与新建 firmware/ 工程
+# =========================================================
+
+# 1. 本地参考例程与根目录示范源文件（仅作参考，不上传 GitHub）
+/程序源码/
+/DS1302.c
+/DS1302.h
+/LCD1602.c
+/LCD1602.h
+/新建 文本文档.txt
+
+# 2. 课程结业论文模板及后续 LaTeX 结业论文（严格本地保留）
+/paper/
+课程结业论文封皮模板-单片机.*
+*结业论文*
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# 3. 备份与归档目录
+/backups/
+/archive/
+
+# 4. Keil uVision5 编译中间产物与个人界面配置
+# 注意：firmware/ 下的 .uvproj / .uvopt / .c / .h / .hex 均正常纳入版本控制
+**/Objects/
+**/Listings/
+*.uvgui.*
+*.bak
+*.__i
+*.obj
+*.lst
+*.m51
+*.lnp
+*.plg
+*.build_log.htm
+*.dep
+*.crf
+*.d
+*.o
+*.i
+*.s
+*.axf
+*.sct
+*.htm
+build.log
+
+# 5. 系统与编辑器临时文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+*.swo
+~*
